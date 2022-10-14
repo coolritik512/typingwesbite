@@ -1,0 +1,9 @@
+*{
+    padding: 0px;
+    margin : 0px;
+}
+
+.button{
+    background-color: rgb(63, 59, 59);
+    color: whitesmoke;
+}

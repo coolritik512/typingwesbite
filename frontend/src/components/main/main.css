@@ -1,0 +1,234 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(63, 59, 59);
+}
+.border{
+    background-color: rgba(7, 0, 1, 0.932);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    color: white;
+}
+
+.center{
+    margin: 1rem 5vw 0 5vw;
+    width: 90vw ;
+    background-color: rgb(100, 100, 100);
+}
+
+.gridfortop{
+    display: grid;
+    grid-template-columns: max-content auto auto;
+    align-items: center;
+    
+    background-color: rgb(63, 59, 59);
+}
+
+.gridforlogoandsign{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    /* background-color: antiquewhite; */
+
+    padding: 5px;
+}
+#name{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    font-size: xx-large;
+    color: orange;
+}
+#logo img{
+     height: 50px;
+     width:50px;
+     border-radius: 25px;
+}
+
+.gridforhelp{
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content max-content;
+    
+}
+.gridforhelpcontainer{
+    padding: 5px;
+    /* background-color: azure; */
+    text-align: left;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 20px;
+}
+.gridforhelpcontainer img{
+    background-color: yellow;
+    margin-top: 7px;
+    height:35px;
+    width: 35px;
+    border-radius: 17px;
+}
+
+.desktopchoosing{
+    display: grid;
+    grid-template-columns: max-content;
+}
+.config{
+    justify-self: right;
+}
+.choosingletters{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 10px;
+}
+.choosingtype{
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    column-gap: 10px;
+}
+
+.choosingtypecorresponding{
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    column-gap: 10px;
+}
+
+.mobileconfig{
+    display: grid;
+    grid-template-columns: 30px;
+    grid-template-rows: 5px 5px 5px;
+    background-color: black;
+    row-gap: 5px;
+    width: max-content;
+    justify-self: right;
+}
+.mobileconfiggrid{
+   background-color: aliceblue;
+   width: 30px;
+   height: 5px;
+}
+
+@media only screen and (max-width:800px) {
+    .gridforhelp{
+        grid-area: h;
+    }
+    .gridforlogoandsign{
+        grid-area: l;
+    }
+    .config{
+        grid-area: c;
+        justify-self: right;
+        top: inherit;
+    }
+    .gridfortop{
+        grid-template-areas: "l c c" "h h h";
+    }
+    .gridforhelpcontainer{
+        padding-left: 20px;
+    }
+    .gridforhelpcontainer img{
+        background-color: yellow;
+        height:20px;
+        width: 20px;
+        border-radius: 17px;
+        padding: 0px;
+    }
+    .gridforlogoandsign{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        /* background-color: antiquewhite; */
+        padding: 0px;
+    }
+}
+.setting{
+    /* display: none; */
+}
+.settingcontainer{
+    /* background-color: white; */
+    display:flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    /* color: black; */
+}
+.settingcontainer>.container{
+    display: flex;
+    background-color: rgb(63, 59, 59);
+    border: 1px solid rgb(17, 10, 10);
+    justify-content:space-around;
+}
+
+.typecontainer{
+    display: flex;
+    color: white;
+    border: 1px solid rgb(63, 59, 59);
+    background-color: rgb(103, 98, 98);
+    border-radius: 5px;
+    padding: 0px 5vw 0px 5vw;
+}
+
+#contentarea{
+    font-size: 2rem;
+    height: 9.5rem;
+    flex: 1;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    overflow:hidden;
+}
+
+
+#typingarea{
+    background-color: pink;
+    color: white;
+    height: 50px;
+    font-size: 2rem;    
+    position: absolute;
+    z-index: 9;
+    background-color: transparent;
+    overflow: wrap;
+}
+
+#hello{
+    background-color: plum;
+    height: 50px;
+    display: flex;
+    overflow: wrap;
+}
+
+.result{
+    background-color: aqua;
+    height: 100px;
+    top:105px;
+    width: inherit;
+    position:absolute;
+    z-index: -1;
+}
+.word{
+    margin: 5px;
+    color: gray;
+}
+
+.correctword{
+    color: white;
+}
+.wrongword{
+    color: red;
+}
+
+.workingarea{
+    background-color: rgb(63, 59, 59);
+}
+
+input{
+    border: none;
+    border-color: transparent;
+    border-style: none;
+}
+.typingword{
+    margin-left: 5px;
+    margin-right: 6px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    outline: none;
+    
+    box-shadow: none;
+}
+
