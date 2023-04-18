@@ -1,0 +1,16 @@
+#piechart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+}
+#piechartcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.representation{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}

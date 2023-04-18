@@ -4,6 +4,7 @@ var typedcharnoofword = 0;
 var textList = [];
 var word = "";
 var countword = 0;
+const baseUrlr = process.env.BASE_URL
 class typing extends React.Component {
 
     async callApi() {
@@ -18,12 +19,9 @@ class typing extends React.Component {
             body: JSON.stringify(body)
         };
 
-        var res = await fetch('http://localhost:8000/text', requestOptions).then((res) => res.json());
+        var res = await fetch(`https://typingwesbite-production.up.railway.app/text`, requestOptions).then((res) => res.json());
 
-        // console.log(res);
         var text = res.text;
-        // console.log(text);
-        // var text = "Hello this is not defined";
         this.loadtext(text.text, this.props);
     }
     async componentDidMount() {

@@ -1,0 +1,6 @@
+.area{
+    display: flex;
+    flex-direction: row;
+    color:rgb(229, 229, 19);
+    font-size: xx-large;
+}

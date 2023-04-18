@@ -48,7 +48,7 @@ router.route('/text').post(function (req, res) {
             }
             else {
                 console.log('hello');
-                res.end(JSON.stringify({ 'text': docs[Math.floor(Math.random() * docs.length) - 1]}));
+                res.end(JSON.stringify({ 'text': docs[Math.floor(Math.random() * docs.length) - 1] }));
             }
         })
     }
